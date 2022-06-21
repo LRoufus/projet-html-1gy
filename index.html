@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,37 +13,115 @@
     <h2>Table des matières</h2>
 
     <ol>
-        <Li>Introduction</Li>
-        <Li>GPU vs CPU</Li>
-        <Li>GPU intégré et dédié</Li>
-        <li>Performance</li>
-        <Li>Tâches</Li>
-        <Li>Envol des prix</Li>
+        <Li><a href="#introduction">Introduction</a></Li>
+        <Li><a href="#vs">GPU vs CPU</a></Li>
+        <Li><a href="#dédié">GPU intégré et dédié</a></Li>
+        <li><a href="#perf">Performance</a></li>
+        <Li><a href="#tâches">Tâches</a></Li>
+        <Li><a href="#calcul">Carte graphique pour le calcul scientifique</a></Li>
+        <Li><a href="#prix">Envol des prix</a></Li>
     </ol>
 
-    <h2 id="h2-special">Introduction</h2>
+    <h2 id="introduction">Introduction</h2>
 
-    <p>Le GPU ou graphic processor unit, est une forme de processeur dédié 
-        au rendu graphique(affiché en pixels sur l'écran), il transforme le 
-        code exécuté par le CPU en image de pixels.</p>
+    <p>Le GPU ou graphic processor unit est la puce centrale de la carte graphique ou la puce graphique intégrée au SoC. Elle permet de créer l'image des programmes exécutés par le CPU.</p>
 
-    <h2 class="red" id="section-introduction">Introduction</h2>
-
-    <p>Ceci est le début de mon introduction. </p>
-
-    <img src="https://www.universfreebox.com/wp-content/uploads/2022/03/hive-mdp.jpg" alt="Solidité des mots de passe en fonction de la longueur">
-
-    <h2 class="blue">Critères de qualité des mots de passe</h2>
+    <h2 id="vs">GPU vs CPU</h2>
 
     <ul>
-        <li>GPU vs CPU</li>
-        <li>P</li>
-        <li>éléments 3</li>
+        <Li>Le GPU possède beaucoup plus de coeurs que le CPU pour lui permettre de traiter plus d'informations au même moment. Ceci lui permet d'être très performant dans le rendu d'images, le deep learning (pour les intelligences artificielles par exemple) ou les calculs scientifiques, car ils demandent de pouvoir traiter un maximum de données au même instant.</Li>
+        <Li>Le CPU possède moins de coeurs que le GPU, mais chacun de ces coeurs est plus puissant. Ceux-ci permettent une meileur vitesse d'exécution pour les programmes grâce à la meilleure efficacité des coeurs sur des tâches individuelles. C'est donc lui qui exécutera les programmes dont le GPU fers le rendu. </Li>
+    </ul>
+    <img src="https://static.javatpoint.com/computer/images/gpu-vs-cpu.png">
+
+
+    <h2 id="dédié">GPU intégré et dédié</h2>
+    <ul>
+        <li>Intégré : puce GPU intégrée au CPU (ensemble nommé SoC), pour même période moins puissant que dédié, mais moins spacieux</li>
+        <li>Dédié : GPU mis à part du CPU et a dans la majorité des cas sa mémoire dédiée, plus puissant pour même génération, plus récent = plus gros (pour chaque gamme), comme second système dédié au rendu </li>
+
     </ul>
 
-    <h3></h3>
+    <h2 id="perf">Performance</h2>
+    <table>
+        <tr>
+            <th>Modèle</th>
+            <th>Nombre de coeurs</th>
+            <th>Fréquence boost</th>
+            <th>Mémoire  </th>
+            <th>Consommation</th>
+        </tr>
+        <tr>
+            <td>RTX 3050</td>
+            <td>2560</td>
+            <td>1.78 Ghz</td>
+            <td>8 Go</td>
+            <td>130 W</td>
+        </tr>
+        <tr>
+            <td>RTX 3060</td>
+            <td>3584</td>
+            <td>1.78 Ghz</td>
+            <td>12 Go</td>
+            <td>170 W</td>
+        </tr>
+        <tr>
+            <td>RTX 3070</td>
+            <td>5888</td>
+            <td>1.73 Ghz</td>
+            <td>8 Go</td>
+            <td>220 W</td>
+        </tr>
+        <tr>
+            <td>RTX 3080</td>
+            <td>8960</td>
+            <td>1.71 Ghz</td>
+            <td>10/12 Go</td>
+            <td>350 W</td>
+        </tr>
+        <tr>
+            <td>RTX 3090</td>
+            <td>10496</td>
+            <td>1.70 Ghz</td>
+            <td>24 Go</td>
+            <td>350 W</td>
+        </tr>
+    </table>
+    <h3>Légende</h3>
+    <ul>
+        <li>Nb de cœurs : nombre d’unités pouvant effectuer des calculs</li>
+        <li>Fréquence boost : vitesse maximale à laquelle les cœurs peuvent effectuer leurs calculs </li>
+        <li>Taille mémoire : masse de données maximale pouvant être traitée au même moment</li>
+        <li>Consommation : puissance maximale utilisée par la carte</li>
+    </ul>
+    <h2 id="tâches">Tâches</h2>
+    <ol>
+        <Li>Transforme les données des programmes exécutés par le CPU en pixels affichés sur l'écran.</Li>
+        <Li>Crée des rendus 2D ou 3D affichés à l'écran(Gaming, édition vidéo, modélisation 3D).</Li>
+        <Li>Fait du machine ou deep learning pour les IA en analysant beaucoup de données en même temps. </Li>
+        <Li>Effectue des calculs scientifiques.</Li>
+    </ol>
 
-    <h2>Références</h2>
+    <h2 id="calcul">Exemple de carte graphique pour calcul scientifique</h2>
+  <img src="https://www.bechtle.com/shop/medias/6151e0252c0e5c041e119c19-900Wx900H-820Wx820H?context=bWFzdGVyfHJvb3R8NTQ1Mjh8aW1hZ2UvanBlZ3xoZTcvaGE2LzExNjk4MjQ2NjE1MDcwLmpwZ3xjN2MzNDQ5ZDViNGVjM2ExODRjOGU0NDlkODc5ZTJjMzNmNmM5NDBkNTI5YjEwZDk1YTkxOGNmNmE5YzJmNmU0" alt="Solidité des mots de passe en fonction de la longueur">
+  <h3>NVIDIA RTX A-series A4000 </h3>
+    <ul>
+        <li>interface de mémoire : 256-bit</li>
+        <li>Noyaux CUDA : 6144</li>
+        <li>Mémoire : 16 GB GDDR6 avec ECC</li>
+        <li>Bande passante : 488 GB/sec</li>
+    </ul>
+
+    <h2 id="prix">Envol des prix</h2>
+    <p>Lors de la pandémie les gens se sont tous mis au même moment à travailler depuis chez eux dur un ordinateur 
+        qu’ils ont dû soit améliorer soit changer, ceci a causé une énorme augmentation de demande de puces que les 
+        producteurs n’avaient pas prévue. Ceci les a obligés à faire tourner leurs usines à leur capacité maximale, 
+        mais malgré tout les cartes graphiques, à travers les différentes étapes de leur construction prennent du temps 
+        à être fabriquées. Ce qui fait que l’énorme demande ne peut pas être réglée immédiatement. </p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3A4yk-P5ukY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+<h2 id="ref">Références</h2>
 
     <ul>
         <li>Image 1 : tirée de <a href="https://www.google.com">Page Google</a></li>
