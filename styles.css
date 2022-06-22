@@ -1,11 +1,56 @@
-h2.red {
+h1 {
+    color :rgb(255, 106, 106);
+    text-align: center;
+}
+
+h2 {
     color: red;
+    text-align: center;
 }
 
-h2.blue {
-    color: blue;
-}
 
-#h2-special {
-    border: 2px solid green;
+h3 {
+    color:rgb(1, 12, 168)
 }
+ body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-image: url(https://i.pinimg.com/originals/81/12/0f/81120fe2c7303cb2c0b403e7d3edf38b.jpg);
+ }
+
+
+figure img {
+    width : 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+ }
+ 
+figcaption {
+    text-align: center;
+}
+ 
+.youtube {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+ }
+
+ p {
+    color: white;
+ }
+
+ li {
+    color: white;
+ }
+
+ td {
+    color: white;
+ }
+ 
+ th {
+    color: white;
+ }
+ figcaption {
+    color: white;
+ }
+ 
